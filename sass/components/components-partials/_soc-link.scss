@@ -1,0 +1,29 @@
+.soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.soc-linc--wite {
+  fill: var(--icons-color);
+  transition: background-color var(--duration) var(--timing-function),
+    fill var(--duration) var(--timing-function);
+  &:hover,
+  &:focus {
+    fill: var(--second-text-color);
+    background-color: var(--accent-color);
+  }
+}
+
+.soc-linc--darck {
+  fill: var(--second-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
