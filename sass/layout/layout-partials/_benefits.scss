@@ -6,6 +6,7 @@
 
 .quality__item {
   max-width: 100%;
+
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -29,12 +30,15 @@
 }
 
 .quality__titel {
-  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .quality__text {
   font-size: 14px;
