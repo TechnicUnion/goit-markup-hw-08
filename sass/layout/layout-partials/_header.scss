@@ -11,14 +11,23 @@
 }
 
 .nav__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .menu {
-  display: flex;
+  display: none;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .menu__item:not(:last-child) {
@@ -56,8 +65,12 @@
 }
 
 .header__connect {
-  display: flex;
+  display: none;
   margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .connect__item:not(:first-child) {
