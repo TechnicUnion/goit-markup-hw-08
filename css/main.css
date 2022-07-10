@@ -115,10 +115,25 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -317,8 +332,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .soc-item {
@@ -360,14 +381,22 @@ body {
 
 .benefits__quality {
   display: flex;
-  align-items: center;
-  margin-left: -30px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .quality__item {
-  max-width: 270px;
-  flex-basis: calc(25% - 30px);
-  margin-left: 30px;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .quality__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .quality__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .icon-wrap {
@@ -376,7 +405,7 @@ body {
   align-items: center;
   background: var(--background-cards-color);
   border-radius: 4px;
-  width: 270px;
+  width: 100%;
   height: 120px;
 }
 
@@ -385,6 +414,7 @@ body {
 }
 
 .quality__titel {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -654,7 +684,13 @@ body {
 }
 
 .offers {
-  padding-top: 0;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .offers {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .offers__title {
