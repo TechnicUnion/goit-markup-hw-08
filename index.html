@@ -221,11 +221,34 @@
               </div>
             </li>
             <li class="position__item">
-              <img
-                src="./images/frontend-developer.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/frontend-developer-1x.jpg 1x,
+                    ./images/frontend-developer-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontend-developer-tab-1x.jpg 1x,
+                    ./images/frontend-developer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontend-developer-mob-1x.jpg 1x,
+                    ./images/frontend-developer-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/frontend-developer-mob-1x.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                />
+              </picture>
               <div class="position__card">
                 <h3 class="position__title">Ольга Репина</h3>
                 <p lang="en" class="position__text">Frontend Developer</p>
@@ -262,11 +285,34 @@
               </div>
             </li>
             <li class="position__item">
-              <img
-                src="./images/marketing.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/marketing-1x.jpg 1x,
+                    ./images/marketing-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-tab-1x.jpg 1x,
+                    ./images/marketing-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-mob-1x.jpg 1x,
+                    ./images/marketing-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/marketing-mob-1x.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                />
+              </picture>
               <div class="position__card">
                 <h3 class="position__title">Николай Тарасов</h3>
                 <p lang="en" class="position__text">Marketing</p>
@@ -303,11 +349,34 @@
               </div>
             </li>
             <li class="position__item">
-              <img
-                src="./images/ui-designer.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ui-designer-1x.jpg 1x,
+                    ./images/ui-designer-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ui-designer-tab-1x.jpg 1x,
+                    ./images/ui-designer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ui-designer-mob-1x.jpg 1x,
+                    ./images/ui-designer-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/ui-designer-mob-1x.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                />
+              </picture>
               <div class="position__card">
                 <h3 class="position__title">Михаил Ермаков</h3>
                 <p lang="en" class="position__text">UI Designer</p>
@@ -346,7 +415,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__titel">Постоянные клиенты</h2>
           <ul class="list clients__list">
@@ -394,7 +463,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">
       <div class="container">
