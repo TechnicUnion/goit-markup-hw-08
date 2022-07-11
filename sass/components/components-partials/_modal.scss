@@ -55,6 +55,10 @@
   pointer-events: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal-title {
   margin-bottom: 12px;
   font-size: 20px;
