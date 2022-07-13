@@ -1,12 +1,13 @@
 .portfolio-galery-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  gap: 30px;
 }
 
 .portfolio-galery-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: inherit;
   transition: box-shadow var(--duration) var(--timing-function);
 }
@@ -18,9 +19,14 @@
 }
 
 .portfolio-galery-item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-galery-link:hover .cover-text,
@@ -37,18 +43,32 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
   height: 100%;
-  padding: 63px 24px;
-  font-size: 18px;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: 14px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(101%);
   transition: transform var(--duration) var(--timing-function);
+
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    padding-top: 49px;
+  }
 }
 
 .portfolio-card-content {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
