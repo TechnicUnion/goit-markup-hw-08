@@ -184,7 +184,6 @@ body {
   margin-right: auto;
   width: 100%;
   max-width: 450px;
-  max-height: 609px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -241,10 +240,16 @@ body {
 .modal-title {
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.1;
+  }
 }
 
 .modal-field {
@@ -318,16 +323,26 @@ body {
 .checkbox {
   position: relative;
   margin-bottom: 30px;
-  margin-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox {
+    margin-left: 12px;
+  }
 }
 
 .checkbox-label {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox-label a {
   color: var(--accent-color);
