@@ -185,28 +185,55 @@
           <h2 class="offers__title">Чем мы занимаемся</h2>
           <ul class="list offers__list">
             <li class="offers__item">
-              <img
-                src="./images/writing-code.jpg"
-                alt="Розметка сайта"
-                width="370"
-              />
-              <div class="offers__text"><b>Десктопные приложения</b></div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/writing-code.jpg    1x,
+                    ./images/writing-code-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/writing-code.jpg"
+                  alt="Розметка сайта"
+                  width="370"
+                />
+              </picture>
+              <div class="offers__text"><p>Десктопные приложения</p></div>
             </li>
             <li class="offers__item">
-              <img
-                src="./images/phone-and-laptop.jpg"
-                alt="Варианты мобильных версий сайтов"
-                width="370"
-              />
-              <div class="offers__text"><b>Мобильные приложения</b></div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/phone-and-laptop.jpg    1x,
+                    ./images/phone-and-laptop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/phone-and-laptop.jpg"
+                  alt="Варианты мобильных версий сайтов"
+                  width="370"
+                />
+              </picture>
+              <div class="offers__text"><p>Мобильные приложения</p></div>
             </li>
             <li class="offers__item">
-              <img
-                src="./images/color-palette.jpg"
-                alt="Палитра цветов на планшете"
-                width="370"
-              />
-              <div class="offers__text"><b>Дизайнерские решения</b></div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/color-palette.jpg    1x,
+                    ./images/color-palette-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/color-palette.jpg"
+                  alt="Палитра цветов на планшете"
+                  width="370"
+                />
+              </picture>
+              <div class="offers__text"><p>Дизайнерские решения</p></div>
             </li>
           </ul>
         </div>
