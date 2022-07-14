@@ -367,6 +367,7 @@ body {
 
 .checkbox-icon {
   margin-right: 12px;
+  min-width: 16px;
 }
 @media screen and (min-width: 480px) {
   .checkbox-icon {
@@ -1262,7 +1263,7 @@ body {
   transform: translateY(101%);
   transition: transform var(--duration) var(--timing-function);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 420px) {
   .cover-text {
     align-items: center;
     padding-top: 0;
