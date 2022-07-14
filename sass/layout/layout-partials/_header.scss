@@ -93,8 +93,6 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  padding-top: 5px;
-  padding-bottom: 5px;
   color: var(--text-color);
   transition: color var(--duration) var(--timing-function);
   &:hover,
@@ -106,6 +104,20 @@
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+.connect__link--mail {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+}
+
+.connect__link--tel {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 5px;
+    padding-bottom: 20px;
   }
 }
 
