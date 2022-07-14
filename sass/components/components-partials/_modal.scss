@@ -41,6 +41,7 @@
     top: 50%;
     left: 50%;
     height: 90%;
+    max-height: 609px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--duration) var(--timing-function);
   }
@@ -177,27 +178,25 @@
 .checkbox-label {
   font-size: 12px;
   line-height: 1.17;
+}
 
-  .checkbox-thumb {
-    display: flex;
-    align-items: center;
-  }
+.checkbox-thumb {
+  display: flex;
+  align-items: center;
+}
 
+.checkbox-text {
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color);
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 2;
   }
   a {
     display: inline-block;
     color: var(--accent-color);
-  }
-  span {
-    position: relative;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
   }
 }
 
